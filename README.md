@@ -27,6 +27,7 @@ We will build a MVP (Minimum Viable Product) that we can expand to cover all of 
 ## Technologies Involved
 * Git
 * WebAPI
+* SSDT (SQL Server Data Tools)
 * Authentication
 * Unit Testing
 * SOLID principles
@@ -39,7 +40,6 @@ We will build a MVP (Minimum Viable Product) that we can expand to cover all of 
 * CSS
 * JavaScript
 * WPF
-* SSDT
 * ASP.NET MVC
 * .NET Core
 * Azure DevOps
