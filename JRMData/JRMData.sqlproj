@@ -6,7 +6,7 @@
     <Name>JRMData</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{acd11d1a-08c6-401a-9a2a-ef817be48ccb}</ProjectGuid>
+    <ProjectGuid>{6b03a9e3-4724-413b-9b64-c6161c516a83}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
