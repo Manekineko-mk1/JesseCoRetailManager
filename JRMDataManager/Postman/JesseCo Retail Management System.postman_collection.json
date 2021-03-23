@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "5748a021-2d6b-402e-a252-9cf024f2a4a6",
+		"name": "JesseCo Retail Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST - Create an account",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"Email\": \"helloAdmin1@test.com\",\r\n  \"Password\": \"abcd123\",\r\n  \"ConfirmPassword\": \"abcd123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44347/api/account/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"account",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - User Token",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "helloAdmin1@test.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "abcd123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44347/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Values",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer D08yHIuWk_jkWoo3ZZccB5mQODyIbfWFr0bmwriBiRU54C-MYiH5pTdRz6GT8Auj1BbslYIeqOa-Pk5r2aI_nSEiHrVJJGXQq5G1C5BX7pZLs1HCN9CAY6Xff_wno9v98ncgxmM_FJaH3OGhDM1Bj5_OjGSCDbrCRRieFJH0ez8FTagNYUL0MpZnyrihFKJlq9XVGNB6CV2ZODR6D8yEHKTbiWgHI0FOZwZXwadVSwWTNMeb9vbBHWWHTPbhPfiscobk_LS-fhAdbh4BRfapm2oFHN0BBYGKa3399XdesX3tE7TOERZ5VSFErnqRDp-GVGlywbhUgfiYAdFdKBtTO3ogu66CxUlIpx9gFqqHcP_Et7Vj3VkJF7k9lwYzHww9e70NtKEcKCdcSMJ1t8BObJwttmvsR7QIYh6G4XfbJAr3dySB528QIGTwBhoZVYCtWFkiHH8xmyh2krHXmnehG9witAyofo46BaM1epSlMc47WCeeFS3-Cz4KIQif3dEW",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44347/api/values",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44347",
+					"path": [
+						"api",
+						"values"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
